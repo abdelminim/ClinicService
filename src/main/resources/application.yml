@@ -1,0 +1,24 @@
+server:
+  servlet-path: /*
+  servlet:
+    contextPath: /ClinicSystemService
+  port: 8085
+
+spring:
+  application:
+    name: ClinicSystemService
+
+  datasource:
+    username: hbstudent
+    password: hbstudent
+    url: jdbc:mysql://localhost:3306/clinic
+    driverClassName: com.mysql.cj.jdbc.Driver
+  jpa:
+    show-sql: true
+#    generate-ddl: update
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    hibernate:
+      properties:
+        hibernate:
+        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+#      ddl-auto: none
